@@ -88,7 +88,7 @@ Each renamed PDF sits in the appropriate folder, and `./tracking/processed.json`
 | Setting               | Where                                           | Notes                                                                                |
 | --------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------ |
 | **OpenAI API key**    | Environment var `OPEN_API_KEY`                  | Mandatory. Obtain from [https://platform.openai.com/](https://platform.openai.com/). |
-| **Model name**        | `generators.py → NameChanger.model_name`        | Swap for another model string if you prefer.                                         |
+| **Model name**        | Environment var `MODEL_NAME`                    | Mandatory. Obtain from [https://platform.openai.com/](https://platform.openai.com/).                                         |
 | **Batch size**        | CLI flag `--batch-size`                         | Tune based on your memory/throughput requirements.                                   |
 | **Max pages per PDF** | `helpers.py → extract_text_from_pdf(max_pages)` | Default is 20 pages – increase for more context, but expect higher token costs.      |
 

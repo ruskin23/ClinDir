@@ -9,7 +9,7 @@ class NameChanger:
     Uses OpenAI to analyze PDF content and generate metadata for renaming and classifying documents.
     """
 
-    def __init__(self, api_key: Optional[str] = None):
+    def __init__(self, api_key: Optional[str] = None, model_name: Optional[str] = None):
         """
         Initializes the NameChanger with an OpenAI client.
 
@@ -17,7 +17,7 @@ class NameChanger:
             api_key: Optional API key. If not provided, attempts to read from the environment variable 'OPEN_API_KEY'.
         """
         self.client = OpenAI(api_key=api_key or os.getenv("OPEN_API_KEY"))
-        self.model_name = "gpt-4.1-2025-04-14"
+        self.model_name = model_name or os.getenv("MODEL_NAME")
 
     def process_document(self, text: str) -> OutputParsed:
         """
