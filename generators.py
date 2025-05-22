@@ -37,9 +37,9 @@ class NameChanger:
 
         1.  **`docType`**: Classify the document into ONE of the following lowercase categories:
             * `textbook`: A comprehensive instructional book designed for a course of study or self-learning, often covering a subject systematically. Look for explicit mentions like 'book', 'textbook', chapter structures, exercises, or a preface describing its educational purpose.
-            * `paper`: A formal scholarly work, typically presenting original research findings or reviewing existing research. Often published in journals or conference proceedings. Look for terms like 'abstract', 'keywords', 'introduction', 'methodology', 'results', 'conclusion', 'references', author affiliations with research institutions. May also be called a 'research paper', 'academic paper', or 'scholarly article'.
+            * `paper`: Look for terms like 'abstract', 'keywords', 'introduction', 'methodology', 'results', 'conclusion', 'references', author affiliations with research institutions. May also be called a 'research paper', 'academic paper', or 'scholarly article'.
             * `lecture_notes`: Materials prepared for a lecture or course, such as slides, instructor's notes, or detailed handouts. Often less formal than a textbook and may include course-specific information (e.g., 'CS101 Lecture 5').
-            * `article`: A piece of writing included with others in a newspaper, magazine, online publication (like a blog post or technical write-up that isn't a formal research paper), or other non-peer-reviewed publication. This is distinct from a scholarly `paper`.
+            * `article`: A piece of writing included with others in a newspaper, magazine, or technical write-up that isn't a formal research paper, or other non-peer-reviewed publication. This is distinct from a scholarly `paper`.
             * `other`: Use this category ONLY if the document clearly does not fit any of the above categories (e.g., a technical manual, a dataset description, a standalone assignment sheet without lecture context, a form, a report not classifiable as a paper).
 
         2.  **`description`**: Provide a 2-3 sentence concise summary of the document's main topic and purpose based on the provided text.
