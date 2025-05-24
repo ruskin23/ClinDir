@@ -1,6 +1,6 @@
 # ClinDir
 
-AI‑powered PDF **Clin**ical **Dir**ectory organiser ― a lightweight pipeline that classifies, renames, and neatly shelves your PDF collection using OpenAI’s GPT models.
+AI‑powered PDF Directory organiser ― a lightweight pipeline that classifies, renames, and neatly shelves your PDF collection using OpenAI’s GPT models.
 
 > Give ClinDir a folder of random PDFs and get back an ordered library of `./textbook/`, `./paper/`, `./lecture_notes/`, `./article/`, and `./other/` sub‑directories, with each file bearing an informative, snake‑case name.
 
