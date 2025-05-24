@@ -117,12 +117,12 @@ class NameChanger:
         """
         try:
             response = self.client.responses.parse(
-                model=self.model_name,
+                model=self.model_name, # type: ignore
                 instructions=instructions,
                 input=prompt,
                 text_format=OutputParsed
             )
-            return response.output_parsed
+            return response.output_parsed # type: ignore
         except Exception as e:
             print(f"[ERROR] Failed to process document via OpenAI: {e}")
             raise
