@@ -26,7 +26,8 @@ from helpers import (
 )
 from generators import NameChanger
 from models import FileDescriptor
-
+from dotenv import load_dotenv
+load_dotenv()    
 
 def parse_args() -> argparse.Namespace:
     """
